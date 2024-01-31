@@ -1,0 +1,52 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#timer {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.board-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #d3d6da;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@keyframes scaleUp {
+  /*scapeUp 이라는 이름의 애니메이션 생성*/
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.board-block.correct {
+  /* board-block에 scapeUp애니메이션을 가져와서 속성을 부여하는 correct라는 애니메이션 정의*/
+  animation-name: scaleUp;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}

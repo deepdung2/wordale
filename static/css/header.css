@@ -1,0 +1,35 @@
+header {
+  margin: 20px;
+  border-bottom: 2px solid #d3d6da;
+}
+
+.title svg {
+  width: 30px;
+  margin: 3px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.title-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-name {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 60px;
+  margin-bottom: 7px;
+}
